@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>framework challenge-Aston Martin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nanum Myeongjo', serif;
+      background-color: #f5f5f5;
+    }
+    .hero {
+      background: url('https://www.astonmartin.com/-/media/models---vantage-coupe/engineering-and-performance/scrollable/desktop/02_ngv-enp-desktop.jpg?rev=-1') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 4.5rem;
+      font-weight: 700;
+    }
+    .section {
+      padding: 80px 0;
+    }
+    .section h2 {
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .model-img{
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 0.375rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+      margin-bottom: 1rem;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 0.375rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Aston Martin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#models">Models</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Drive the Extraordinary</h1>
+      <p class="lead fs-4">Experience the power, precision, and poise of Aston Martin</p>
+    </div>
+  </header>
+
+  <section id="about" class="section text-center bg-white">
+    <div class="container">
+      <h2>About Aston Martin</h2>
+      <p class="lead">Since 1913, Aston Martin has symbolized engineering excellence and timeless design. Our legacy of handcrafted luxury sports cars combines uncompromising performance with striking elegance—every model is a reflection of dedication, heritage, and innovation.</p>
+    </div>
+  </section>
+
+  <section id="models" class="section bg-light text-center">
+    <div class="container">
+      <h2>Our Models</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/igsRRluFg9Kw/v1/-1x-1.webp" class="model-img" alt="Vantage">
+          <h4>Vantage</h4>
+          <p>A bold and pure sports car with a powerful twin-turbo V8 engine and dynamic design.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://img.autocarpro.in/autocarpro/IMG/812/41812/goodwood-2016-05-aston-martin-db11.jpg?w=750&h=490&q=75&c=1" class="model-img" alt="DB11">
+          <h4>DB11</h4>
+          <p>A sophisticated GT built for high-speed luxury, with an unmistakable presence and powerful performance.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://economymiddleeast.com/wp-content/uploads/2023/09/18.jpg" class="model-img" alt="DBX707">
+          <h4>DBX707</h4>
+          <p>The ultimate luxury performance SUV, combining speed, beauty, and all-terrain capability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section text-center bg-white">
+    <div class="container">
+      <h2>Gallery</h2>
+      <p class="lead mb-5">Explore our gallery showcasing the artistry and elegance behind every Aston Martin.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://www.astonmartin.com/-/media/models---db12/aug-2024-updates/scrollable-image-stills---interior-desktop/interior_still_image_desktop_20240829131206.jpg?rev=-1" class="gallery-img" alt="DB12 Interior">
+        </div>
+        <div class="col-md-4">
+          <img src="https://i.dailymail.co.uk/i/pix/2013/08/19/article-2375193-1B5DDE6D000005DC-126_1024x615_large.jpg" class="gallery-img" alt="Producton Line">
+        </div>
+        <div class="col-md-4">
+          <img src="https://media.architecturaldigest.com/photos/584aefcea89ebf6d04302022/4:3/w_1963,h_1472,c_limit/Aston%20Martin%20DB4%20GT%20-%201%20.jpg" class="gallery-img" alt="DB4 GT">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section text-center bg-light">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="lead">Arrange a test drive or connect with one of our luxury consultants.</p>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="col-md-4">
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="col-8">
+          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+        </div>
+        <div class="col-8">
+          <button type="submit" class="btn btn-dark btn-lg w-100">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Aston Martin. All rights reserved.</p>
+      <small>Crafted with precision in Britain</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
